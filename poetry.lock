@@ -1,0 +1,280 @@
+[[package]]
+category = "dev"
+description = "A small Python module for determining appropriate platform-specific dirs, e.g. a \"user data dir\"."
+marker = "python_version >= \"3.6\" and python_version < \"4.0\""
+name = "appdirs"
+optional = false
+python-versions = "*"
+version = "1.4.3"
+
+[[package]]
+category = "dev"
+description = "An abstract syntax tree for Python with inference support."
+name = "astroid"
+optional = false
+python-versions = ">=3.4.*"
+version = "2.1.0"
+
+[package.dependencies]
+lazy-object-proxy = "*"
+six = "*"
+wrapt = "*"
+
+[package.dependencies.typed-ast]
+python = "<3.7"
+version = "*"
+
+[package.dependencies.typing]
+python = "<3.5"
+version = "*"
+
+[[package]]
+category = "dev"
+description = "Classes Without Boilerplate"
+marker = "python_version >= \"3.6\" and python_version < \"4.0\""
+name = "attrs"
+optional = false
+python-versions = "*"
+version = "18.2.0"
+
+[[package]]
+category = "dev"
+description = "The uncompromising code formatter."
+marker = "python_version >= \"3.6\" and python_version < \"4.0\""
+name = "black"
+optional = false
+python-versions = ">=3.6"
+version = "18.9b0"
+
+[package.dependencies]
+appdirs = "*"
+attrs = ">=17.4.0"
+click = ">=6.5"
+toml = ">=0.9.4"
+
+[[package]]
+category = "main"
+description = "Composable command line interface toolkit"
+name = "click"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+version = "7.0"
+
+[[package]]
+category = "dev"
+description = "Cross-platform colored terminal text."
+marker = "sys_platform == \"win32\""
+name = "colorama"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+version = "0.4.1"
+
+[[package]]
+category = "main"
+description = "A simple framework for building complex web applications."
+name = "flask"
+optional = false
+python-versions = "*"
+version = "1.0.2"
+
+[package.dependencies]
+Jinja2 = ">=2.10"
+Werkzeug = ">=0.14"
+click = ">=5.1"
+itsdangerous = ">=0.24"
+
+[[package]]
+category = "main"
+description = "Adds SQLAlchemy support to your Flask application"
+name = "flask-sqlalchemy"
+optional = false
+python-versions = "*"
+version = "2.3.2"
+
+[package.dependencies]
+Flask = ">=0.10"
+SQLAlchemy = ">=0.8.0"
+
+[[package]]
+category = "dev"
+description = "A Python utility / library to sort Python imports."
+name = "isort"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+version = "4.3.4"
+
+[[package]]
+category = "main"
+description = "Various helpers to pass data to untrusted environments and back."
+name = "itsdangerous"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+version = "1.1.0"
+
+[[package]]
+category = "main"
+description = "A small but fast and easy to use stand-alone template engine written in pure python."
+name = "jinja2"
+optional = false
+python-versions = "*"
+version = "2.10"
+
+[package.dependencies]
+MarkupSafe = ">=0.23"
+
+[[package]]
+category = "dev"
+description = "A fast and thorough lazy object proxy."
+name = "lazy-object-proxy"
+optional = false
+python-versions = "*"
+version = "1.3.1"
+
+[[package]]
+category = "main"
+description = "Safely add untrusted strings to HTML/XML markup."
+name = "markupsafe"
+optional = false
+python-versions = ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*"
+version = "1.1.0"
+
+[[package]]
+category = "dev"
+description = "McCabe checker, plugin for flake8"
+name = "mccabe"
+optional = false
+python-versions = "*"
+version = "0.6.1"
+
+[[package]]
+category = "main"
+description = "psycopg2 - Python-PostgreSQL Database Adapter"
+name = "psycopg2-binary"
+optional = false
+python-versions = "*"
+version = "2.7.6.1"
+
+[[package]]
+category = "dev"
+description = "python code static checker"
+name = "pylint"
+optional = false
+python-versions = ">=3.4.*"
+version = "2.2.2"
+
+[package.dependencies]
+astroid = ">=2.0.0"
+colorama = "*"
+isort = ">=4.2.5"
+mccabe = "*"
+
+[[package]]
+category = "main"
+description = "Pure Python MySQL Driver"
+name = "pymysql"
+optional = false
+python-versions = "*"
+version = "0.9.3"
+
+[[package]]
+category = "dev"
+description = "Python 2 and 3 compatibility utilities"
+name = "six"
+optional = false
+python-versions = ">=2.6, !=3.0.*, !=3.1.*"
+version = "1.12.0"
+
+[[package]]
+category = "main"
+description = "Database Abstraction Library"
+name = "sqlalchemy"
+optional = false
+python-versions = "*"
+version = "1.2.15"
+
+[[package]]
+category = "dev"
+description = "Python Library for Tom's Obvious, Minimal Language"
+marker = "python_version >= \"3.6\" and python_version < \"4.0\""
+name = "toml"
+optional = false
+python-versions = "*"
+version = "0.10.0"
+
+[[package]]
+category = "main"
+description = "Style preserving TOML library"
+name = "tomlkit"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+version = "0.5.3"
+
+[package.dependencies]
+[package.dependencies.typing]
+python = ">=2.7,<2.8 || >=3.4,<3.5"
+version = ">=3.6,<4.0"
+
+[[package]]
+category = "dev"
+description = "a fork of Python 2 and 3 ast modules with type comment support"
+marker = "python_version < \"3.7\" and implementation_name == \"cpython\""
+name = "typed-ast"
+optional = false
+python-versions = "*"
+version = "1.1.1"
+
+[[package]]
+category = "main"
+description = "Type Hints for Python"
+marker = "python_version >= \"2.7\" and python_version < \"2.8\" or python_version >= \"3.4\" and python_version < \"3.5\" or python_version < \"3.5\""
+name = "typing"
+optional = false
+python-versions = "*"
+version = "3.6.6"
+
+[[package]]
+category = "main"
+description = "The comprehensive WSGI web application library."
+name = "werkzeug"
+optional = false
+python-versions = "*"
+version = "0.14.1"
+
+[[package]]
+category = "dev"
+description = "Module for decorators, wrappers and monkey patching."
+name = "wrapt"
+optional = false
+python-versions = "*"
+version = "1.10.11"
+
+[metadata]
+content-hash = "c1a8320276d6300944b4a3db477592354d3796159e151d51843a76cc456a573c"
+python-versions = "^3.4"
+
+[metadata.hashes]
+appdirs = ["9e5896d1372858f8dd3344faf4e5014d21849c756c8d5701f78f8a103b372d92", "d8b24664561d0d34ddfaec54636d502d7cea6e29c3eaf68f3df6180863e2166e"]
+astroid = ["35b032003d6a863f5dcd7ec11abd5cd5893428beaa31ab164982403bcb311f22", "6a5d668d7dc69110de01cdf7aeec69a679ef486862a0850cc0fd5571505b6b7e"]
+attrs = ["10cbf6e27dbce8c30807caf056c8eb50917e0eaafe86347671b57254006c3e69", "ca4be454458f9dec299268d472aaa5a11f67a4ff70093396e1ceae9c76cf4bbb"]
+black = ["817243426042db1d36617910df579a54f1afd659adb96fc5032fcf4b36209739", "e030a9a28f542debc08acceb273f228ac422798e5215ba2a791a6ddeaaca22a5"]
+click = ["2335065e6395b9e67ca716de5f7526736bfa6ceead690adf616d925bdc622b13", "5b94b49521f6456670fdb30cd82a4eca9412788a93fa6dd6df72c94d5a8ff2d7"]
+colorama = ["05eed71e2e327246ad6b38c540c4a3117230b19679b875190486ddd2d721422d", "f8ac84de7840f5b9c4e3347b3c1eaa50f7e49c2b07596221daec5edaabbd7c48"]
+flask = ["2271c0070dbcb5275fad4a82e29f23ab92682dc45f9dfbc22c02ba9b9322ce48", "a080b744b7e345ccfcbc77954861cb05b3c63786e93f2b3875e0913d44b43f05"]
+flask-sqlalchemy = ["3bc0fac969dd8c0ace01b32060f0c729565293302f0c4269beed154b46bec50b", "5971b9852b5888655f11db634e87725a9031e170f37c0ce7851cf83497f56e53"]
+isort = ["1153601da39a25b14ddc54955dbbacbb6b2d19135386699e2ad58517953b34af", "b9c40e9750f3d77e6e4d441d8b0266cf555e7cdabdcff33c4fd06366ca761ef8", "ec9ef8f4a9bc6f71eec99e1806bfa2de401650d996c59330782b89a5555c1497"]
+itsdangerous = ["321b033d07f2a4136d3ec762eac9f16a10ccd60f53c0c91af90217ace7ba1f19", "b12271b2047cb23eeb98c8b5622e2e5c5e9abd9784a153e9d8ef9cb4dd09d749"]
+jinja2 = ["74c935a1b8bb9a3947c50a54766a969d4846290e1e788ea44c1392163723c3bd", "f84be1bb0040caca4cea721fcbbbbd61f9be9464ca236387158b0feea01914a4"]
+lazy-object-proxy = ["0ce34342b419bd8f018e6666bfef729aec3edf62345a53b537a4dcc115746a33", "1b668120716eb7ee21d8a38815e5eb3bb8211117d9a90b0f8e21722c0758cc39", "209615b0fe4624d79e50220ce3310ca1a9445fd8e6d3572a896e7f9146bbf019", "27bf62cb2b1a2068d443ff7097ee33393f8483b570b475db8ebf7e1cba64f088", "27ea6fd1c02dcc78172a82fc37fcc0992a94e4cecf53cb6d73f11749825bd98b", "2c1b21b44ac9beb0fc848d3993924147ba45c4ebc24be19825e57aabbe74a99e", "2df72ab12046a3496a92476020a1a0abf78b2a7db9ff4dc2036b8dd980203ae6", "320ffd3de9699d3892048baee45ebfbbf9388a7d65d832d7e580243ade426d2b", "50e3b9a464d5d08cc5227413db0d1c4707b6172e4d4d915c1c70e4de0bbff1f5", "5276db7ff62bb7b52f77f1f51ed58850e315154249aceb42e7f4c611f0f847ff", "61a6cf00dcb1a7f0c773ed4acc509cb636af2d6337a08f362413c76b2b47a8dd", "6ae6c4cb59f199d8827c5a07546b2ab7e85d262acaccaacd49b62f53f7c456f7", "7661d401d60d8bf15bb5da39e4dd72f5d764c5aff5a86ef52a042506e3e970ff", "7bd527f36a605c914efca5d3d014170b2cb184723e423d26b1fb2fd9108e264d", "7cb54db3535c8686ea12e9535eb087d32421184eacc6939ef15ef50f83a5e7e2", "7f3a2d740291f7f2c111d86a1c4851b70fb000a6c8883a59660d95ad57b9df35", "81304b7d8e9c824d058087dcb89144842c8e0dea6d281c031f59f0acf66963d4", "933947e8b4fbe617a51528b09851685138b49d511af0b6c0da2539115d6d4514", "94223d7f060301b3a8c09c9b3bc3294b56b2188e7d8179c762a1cda72c979252", "ab3ca49afcb47058393b0122428358d2fbe0408cf99f1b58b295cfeb4ed39109", "bd6292f565ca46dee4e737ebcc20742e3b5be2b01556dafe169f6c65d088875f", "cb924aa3e4a3fb644d0c463cad5bc2572649a6a3f68a7f8e4fbe44aaa6d77e4c", "d0fc7a286feac9077ec52a927fc9fe8fe2fabab95426722be4c953c9a8bede92", "ddc34786490a6e4ec0a855d401034cbd1242ef186c20d79d2166d6a4bd449577", "e34b155e36fa9da7e1b7c738ed7767fc9491a62ec6af70fe9da4a057759edc2d", "e5b9e8f6bda48460b7b143c3821b21b452cb3a835e6bbd5dd33aa0c8d3f5137d", "e81ebf6c5ee9684be8f2c87563880f93eedd56dd2b6146d8a725b50b7e5adb0f", "eb91be369f945f10d3a49f5f9be8b3d0b93a4c2be8f8a5b83b0571b8123e0a7a", "f460d1ceb0e4a5dcb2a652db0904224f367c9b3c1470d5a7683c0480e582468b"]
+markupsafe = ["048ef924c1623740e70204aa7143ec592504045ae4429b59c30054cb31e3c432", "130f844e7f5bdd8e9f3f42e7102ef1d49b2e6fdf0d7526df3f87281a532d8c8b", "19f637c2ac5ae9da8bfd98cef74d64b7e1bb8a63038a3505cd182c3fac5eb4d9", "1b8a7a87ad1b92bd887568ce54b23565f3fd7018c4180136e1cf412b405a47af", "1c25694ca680b6919de53a4bb3bdd0602beafc63ff001fea2f2fc16ec3a11834", "1f19ef5d3908110e1e891deefb5586aae1b49a7440db952454b4e281b41620cd", "1fa6058938190ebe8290e5cae6c351e14e7bb44505c4a7624555ce57fbbeba0d", "31cbb1359e8c25f9f48e156e59e2eaad51cd5242c05ed18a8de6dbe85184e4b7", "3e835d8841ae7863f64e40e19477f7eb398674da6a47f09871673742531e6f4b", "4e97332c9ce444b0c2c38dd22ddc61c743eb208d916e4265a2a3b575bdccb1d3", "525396ee324ee2da82919f2ee9c9e73b012f23e7640131dd1b53a90206a0f09c", "52b07fbc32032c21ad4ab060fec137b76eb804c4b9a1c7c7dc562549306afad2", "52ccb45e77a1085ec5461cde794e1aa037df79f473cbc69b974e73940655c8d7", "5c3fbebd7de20ce93103cb3183b47671f2885307df4a17a0ad56a1dd51273d36", "5e5851969aea17660e55f6a3be00037a25b96a9b44d2083651812c99d53b14d1", "5edfa27b2d3eefa2210fb2f5d539fbed81722b49f083b2c6566455eb7422fd7e", "7d263e5770efddf465a9e31b78362d84d015cc894ca2c131901a4445eaa61ee1", "83381342bfc22b3c8c06f2dd93a505413888694302de25add756254beee8449c", "857eebb2c1dc60e4219ec8e98dfa19553dae33608237e107db9c6078b1167856", "98e439297f78fca3a6169fd330fbe88d78b3bb72f967ad9961bcac0d7fdd1550", "bf54103892a83c64db58125b3f2a43df6d2cb2d28889f14c78519394feb41492", "d9ac82be533394d341b41d78aca7ed0e0f4ba5a2231602e2f05aa87f25c51672", "e982fe07ede9fada6ff6705af70514a52beb1b2c3d25d4e873e82114cf3c5401", "edce2ea7f3dfc981c4ddc97add8a61381d9642dc3273737e756517cc03e84dd6", "efdc45ef1afc238db84cb4963aa689c0408912a0239b0721cb172b4016eb31d6", "f137c02498f8b935892d5c0172560d7ab54bc45039de8805075e19079c639a9c", "f82e347a72f955b7017a39708a3667f106e6ad4d10b25f237396a7115d8ed5fd", "fb7c206e01ad85ce57feeaaa0bf784b97fa3cad0d4a5737bc5295785f5c613a1"]
+mccabe = ["ab8a6258860da4b6677da4bd2fe5dc2c659cff31b3ee4f7f5d64e79735b80d42", "dd8d182285a0fe56bace7f45b5e7d1a6ebcbf524e8f3bd87eb0f125271b8831f"]
+psycopg2-binary = ["036bcb198a7cc4ce0fe43344f8c2c9a8155aefa411633f426c8c6ed58a6c0426", "1d770fcc02cdf628aebac7404d56b28a7e9ebec8cfc0e63260bd54d6edfa16d4", "1fdc6f369dcf229de6c873522d54336af598b9470ccd5300e2f58ee506f5ca13", "21f9ddc0ff6e07f7d7b6b484eb9da2c03bc9931dd13e36796b111d631f7135a3", "247873cda726f7956f745a3e03158b00de79c4abea8776dc2f611d5ba368d72d", "3aa31c42f29f1da6f4fd41433ad15052d5ff045f2214002e027a321f79d64e2c", "475f694f87dbc619010b26de7d0fc575a4accf503f2200885cc21f526bffe2ad", "4b5e332a24bf6e2fda1f51ca2a57ae1083352293a08eeea1fa1112dc7dd542d1", "570d521660574aca40be7b4d532dfb6f156aad7b16b5ed62d1534f64f1ef72d8", "59072de7def0690dd13112d2bdb453e20570a97297070f876fbbb7cbc1c26b05", "5f0b658989e918ef187f8a08db0420528126f2c7da182a7b9f8bf7f85144d4e4", "649199c84a966917d86cdc2046e03d536763576c0b2a756059ae0b3a9656bc20", "6645fc9b4705ae8fbf1ef7674f416f89ae1559deec810f6dd15197dfa52893da", "6872dd54d4e398d781efe8fe2e2d7eafe4450d61b5c4898aced7610109a6df75", "6ce34fbc251fc0d691c8d131250ba6f42fd2b28ef28558d528ba8c558cb28804", "73920d167a0a4d1006f5f3b9a3efce6f0e5e883a99599d38206d43f27697df00", "8a671732b87ae423e34b51139628123bc0306c2cb85c226e71b28d3d57d7e42a", "8d517e8fda2efebca27c2018e14c90ed7dc3f04d7098b3da2912e62a1a5585fe", "9475a008eb7279e20d400c76471843c321b46acacc7ee3de0b47233a1e3fa2cf", "96947b8cd7b3148fb0e6549fcb31258a736595d6f2a599f8cd450e9a80a14781", "abf229f24daa93f67ac53e2e17c8798a71a01711eb9fcdd029abba8637164338", "b1ab012f276df584beb74f81acb63905762c25803ece647016613c3d6ad4e432", "b22b33f6f0071fe57cb4e9158f353c88d41e739a3ec0d76f7b704539e7076427", "b3b2d53274858e50ad2ffdd6d97ce1d014e1e530f82ec8b307edd5d4c921badf", "bab26a729befc7b9fab9ded1bba9c51b785188b79f8a2796ba03e7e734269e2e", "daa1a593629aa49f506eddc9d23dc7f89b35693b90e1fbcd4480182d1203ea90", "dd111280ce40e89fd17b19c1269fd1b74a30fce9d44a550840e86edb33924eb8", "e0b86084f1e2e78c451994410de756deba206884d6bed68d5a3d7f39ff5fea1d", "eb86520753560a7e89639500e2a254bb6f683342af598088cb72c73edcad21e6", "ff18c5c40a38d41811c23e2480615425c97ea81fd7e9118b8b899c512d97c737"]
+pylint = ["689de29ae747642ab230c6d37be2b969bf75663176658851f456619aacf27492", "771467c434d0d9f081741fec1d64dfb011ed26e65e12a28fe06ca2f61c4d556c"]
+pymysql = ["3943fbbbc1e902f41daf7f9165519f140c4451c179380677e6a848587042561a", "d8c059dcd81dedb85a9f034d5e22dcb4442c0b201908bede99e306d65ea7c8e7"]
+six = ["3350809f0555b11f552448330d0b52d5f24c91a322ea4a15ef22629740f3761c", "d16a0141ec1a18405cd4ce8b4613101da75da0e9a7aec5bdd4fa804d0e0eba73"]
+sqlalchemy = ["809547455d012734b4252081db1e6b4fc731de2299f3755708c39863625e1c77"]
+toml = ["229f81c57791a41d65e399fc06bf0848bab550a9dfd5ed66df18ce5f05e73d5c", "235682dd292d5899d361a811df37e04a8828a5b1da3115886b73cf81ebc9100e", "f1db651f9657708513243e61e6cc67d101a39bad662eaa9b5546f789338e07a3"]
+tomlkit = ["d6506342615d051bc961f70bfcfa3d29b6616cc08a3ddfd4bc24196f16fd4ec2", "f077456d35303e7908cc233b340f71e0bec96f63429997f38ca9272b7d64029e"]
+typed-ast = ["0555eca1671ebe09eb5f2176723826f6f44cca5060502fea259de9b0e893ab53", "0ca96128ea66163aea13911c9b4b661cb345eb729a20be15c034271360fc7474", "16ccd06d614cf81b96de42a37679af12526ea25a208bce3da2d9226f44563868", "1e21ae7b49a3f744958ffad1737dfbdb43e1137503ccc59f4e32c4ac33b0bd1c", "37670c6fd857b5eb68aa5d193e14098354783b5138de482afa401cc2644f5a7f", "46d84c8e3806619ece595aaf4f37743083f9454c9ea68a517f1daa05126daf1d", "5b972bbb3819ece283a67358103cc6671da3646397b06e7acea558444daf54b2", "6306ffa64922a7b58ee2e8d6f207813460ca5a90213b4a400c2e730375049246", "6cb25dc95078931ecbd6cbcc4178d1b8ae8f2b513ae9c3bd0b7f81c2191db4c6", "7e19d439fee23620dea6468d85bfe529b873dace39b7e5b0c82c7099681f8a22", "7f5cd83af6b3ca9757e1127d852f497d11c7b09b4716c355acfbebf783d028da", "81e885a713e06faeef37223a5b1167615db87f947ecc73f815b9d1bbd6b585be", "94af325c9fe354019a29f9016277c547ad5d8a2d98a02806f27a7436b2da6735", "b1e5445c6075f509d5764b84ce641a1535748801253b97f3b7ea9d948a22853a", "cb061a959fec9a514d243831c514b51ccb940b58a5ce572a4e209810f2507dcf", "cc8d0b703d573cbabe0d51c9d68ab68df42a81409e4ed6af45a04a95484b96a5", "da0afa955865920edb146926455ec49da20965389982f91e926389666f5cf86a", "dc76738331d61818ce0b90647aedde17bbba3d3f9e969d83c1d9087b4f978862", "e7ec9a1445d27dbd0446568035f7106fa899a36f55e52ade28020f7b3845180d", "f741ba03feb480061ab91a465d1a3ed2d40b52822ada5b4017770dfcb88f839f", "fe800a58547dd424cd286b7270b967b5b3316b993d86453ede184a17b5a6b17d"]
+typing = ["4027c5f6127a6267a435201981ba156de91ad0d1d98e9ddc2aa173453453492d", "57dcf675a99b74d64dacf6fba08fb17cf7e3d5fdff53d4a30ea2a5e7e52543d4", "a4c8473ce11a65999c8f59cb093e70686b6c84c98df58c1dae9b3b196089858a"]
+werkzeug = ["c3fd7a7d41976d9f44db327260e263132466836cef6f91512889ed60ad26557c", "d5da73735293558eb1651ee2fddc4d0dedcfa06538b8813a2e20011583c9e49b"]
+wrapt = ["d4d560d479f2c21e1b5443bbd15fe7ec4b37fe7e53d335d3b9b0a7b1226fe3c6"]
