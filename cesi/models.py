@@ -1,4 +1,4 @@
-from werkzeug.security import generate_password_hash, check_password_hash
+from passlib.hash import argon2
 from run import db
 
 
@@ -10,10 +10,10 @@ class User(db.Model):
     usertype = db.Column(db.Integer)
 
     def set_password(self, password):
-        self.password = generate_password_hash(password)
+        self.password = argon2.hash(password)
 
     def verify_password(self, password):
-        return check_password_hash(self.password, password)
+        return argon2.verify(password, self.password)
 
     def is_admin(self):
         return self.usertype == 0
